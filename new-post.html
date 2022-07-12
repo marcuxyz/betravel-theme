@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus Pereira - Uma viagem a Indonesia</title>
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.3/dist/paper.min.css">
+  <link rel="stylesheet" href="/assets/custom.css">
+</head>
+
+<body>
+  <nav class="border container container-lg split-nav margin-top">
+    <div class="nav-brand">
+      <h3><a href="/">Marcus Pereira</a></h3>
+    </div>
+    <div class="collapsible">
+      <input id="collapsible1" type="checkbox" name="collapsible1">
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+      <div class="collapsible-body">
+        <ul class="inline">
+          <li><a href="/new-post.html">Nova Postagem</a></li>
+          <li><a href="/new-category.html">Nova Categoria</a></li>
+          <li><a href="/signin.html">Entrar</a></li>
+          <li><a href="/">Sair</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="section margin-top-large">
+      <div class="container container-lg">
+        <form action="">
+          <fieldset>
+            <legend>Cadastro de postagem</legend>
+            <div class="row">
+              <div class="col sm-12">
+                <div class="form-group">
+                  <label for="title">Título</label>
+                  <input type="text" name="title" class="input-block" id="title">
+                </div>
+              </div>
+              <div class="col sm-12">
+                <div class="form-group">
+                  <label for="category">Continente</label>
+                  <select name="category" id="category" class="input-block">
+                    <option value="">Europa</option>
+                    <option value="">America Do Norte</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col sm-12">
+                <div class="form-group">
+                  <label for="content">Contéudo</label>
+                  <textarea name="content" id="content" class="input-block" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              
+              <div class="col sm-12">
+                <div class="form-group">
+                  <label for="image">Imagem</label>
+                  <input type="file" name="image" id="image" class="input-block">
+                </div>
+              </div>
+              
+              <div class="col sm-12">
+                <div class="form-group text-right">
+                  <input type="submit" class="paper-btn btn-success" value="Cadastrar">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="text-center">&COPY; Todos os direitos reservados. Marcus Pereira 2022</p>
+  </footer>
+</body>
+
+</html>
